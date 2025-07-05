@@ -1,0 +1,43 @@
+@Todoapi_HostAddress = http://localhost:5000
+
+### 取得所有待辦事項
+GET {{Todoapi_HostAddress}}/api/todo
+Accept: application/json
+
+###
+
+### 取得特定待辦事項 (ID = 1)
+GET {{Todoapi_HostAddress}}/api/todo/1
+Accept: application/json
+
+###
+
+### 新增待辦事項
+POST {{Todoapi_HostAddress}}/api/todo
+Content-Type: application/json
+
+{
+  "title": "學習 C# Web API",
+  "description": "完成 Todo API 專案",
+  "isCompleted": false
+}
+
+###
+
+### 更新待辦事項
+PUT {{Todoapi_HostAddress}}/api/todo/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "學習 C# Web API - 已完成",
+  "description": "完成 Todo API 專案",
+  "isCompleted": true
+}
+
+###
+
+### 刪除待辦事項
+DELETE {{Todoapi_HostAddress}}/api/todo/1
+
+###
