@@ -1,5 +1,4 @@
-// 定義 Todo 的資料結構
-// interface 就像是「合約」或「規格書」
+
 export interface Todo {
     id: number;           // 數字型別的 ID
     title: string;        // 字串型別的標題

@@ -93,17 +93,9 @@ Desktop.ini
 .env.test.local
 .env.production.local
 
-# Documentation files to exclude
-learning-progress.md
-complete-tutorial-backend.md
-creating-models-guide.md
-csharp-basics-explanation.md
-installing-packages-guide.md
-model-creation-detailed-guide.md
-priority-validation-methods.md
-project-structure-explanation.md
-setup-instructions.md
-step-by-step-tutorial.md
-todocontext-detailed-guide.md
-validation-layers-explanation.md
-sql-trigger-explanation.md
+# Documentation - ignore all MD files except user guides
+*.md
+!README.md
+!USER_GUIDE.md
+!INSTALLATION.md
+!USAGE.md
